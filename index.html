@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psiu - Ajuda Psicológica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="topPagina">
+        <h1 id="nomePagina">Psiu</h1>
+        <div id="modoHumor">
+            <p>Boa noite!</p>
+        </div>
+        <div id="divPerfil">
+            <div style="display: flex;">
+                <img id="fotoPerfil" src="fotoPerfil.jpg" alt="">
+                <p id="nomePerfil">Debora A.</p>
+            </div>
+            <div id="listaBtnsPerfil">
+                <p>Configurações</p>
+                <p>Ajuda</p>
+                <p>Sair</p>
+            </div>
+        </div>
+    </div>
+    <img id="fundo" src="giphy.gif" alt="">
+    <div class="containerDivs">
+        <div class="contornoDivIcone" id="btnBuscarClinicas" onclick="abrirMenu(id)">
+            <div class="divIcone">
+                <img id="icone1" src="mapa.png">
+            </div>
+            <p class="nomeBtn">Buscar Clínicas</p>
+        </div>
+        <div class="contornoDivIcone" id="btnAtendimentoDomiciliar" onclick="abrirMenu(id)">
+            <div class="divIcone">
+                <img id="icone1" src="casa.png">
+            </div>
+            <p class="nomeBtn">Atendimento Domiciliar</p>
+        </div>
+        <div class="contornoDivIcone" id="btnConsultaOnline" onclick="abrirMenu(id)">
+            <div class="divIcone">
+                <img id="icone1" src="consultando.png">
+            </div>
+            <p class="nomeBtn">Consulta Online</p>
+        </div>
+        <div class="contornoDivIcone" id="btnIA" onclick="abrirMenu(id)">
+            <div class="divIcone">
+                <img id="icone1" src="aplicativo-de-ia.png">
+            </div>
+            <p class="nomeBtn">AcolhedorIA</p>
+        </div>
+        
+    </div>
+    <div class="" id="menu">
+        <img class="ocultar" id="loading" src="output-onlinegiftools.gif" alt="">
+        <p id="assuntoLoading"></p>
+        <div class="ocultar" id="menuBuscarClinicas">
+            <div style="display: flex; margin-left: 50%; transform: translate(-50%); width: 100%;">
+                <button id="btnFechar">Fechar</button>
+                <input type="search" id="inputLoc"  placeholder="Pesquise por uma localização">
+                <button id="btnBuscar" onclick="abrirMenu(id)">Buscar</button>
+                <button id="locAtual" onclick="abrirMenu(id)">Localização Atual</button>
+            </div>
+            <img id="maps" src="mapsBrasil.png">
+            <img id="comandos" src="comandos.png" alt="">
+        </div>
+        <div class="ocultar" id="menuAtendimentoDomiciliar">
+            <div id="tela1atendimento">
+                <p>Identificamos que você está em:</p>
+                <h2>IMD - Instituto Metropole Digital</h2>
+                <p>Você gostaria de Atendimento para essa localização?</p>
+                <button id="btnContinuar">Sim! Continuar.</button>
+                <button id="btnDigLoc">Não. Prefiro digitar a localização.</button>
+            </div>
+        </div>
+        <div class="ocultar" id="menuConsultaOnline">
+            <div style="display: flex; margin-left: 50%; transform: translate(-50%); width: 100%;">
+                <button id="btnFechar">Fechar</button>
+                <input id="inputSearchPsicologos" type="search" placeholder="Buscar Profissional">
+                <button id="btnBuscar">Buscar</button>
+            </div>
+            <h2>Profissionais mais buscados em sua Região</h2>
+            <div id="divListaPsicologas">
+                <div class="divPsicologas" id="divTeresa" onclick="abrirMenu(id)">
+                    <div>
+                        <img style="margin-top: 20px;"  class="fotoPerfil" src="fotoperfil1.png" alt="">
+                    </div>
+                    <p style="font-weight: bold;">Dra. Teresa Freire</p>
+                    <p>R$ 2.75/min</p>
+                    <p style="color: green;"> • Disponivel Agora</p>
+                </div>
+                <div class="divPsicologas">
+                    <div>
+                        <img style="margin-top: 20px;"  class="fotoPerfil" src="fotoperfil2.png" alt="">
+                    </div>
+                    <p style="font-weight: bold;">Renato Schreëger</p>
+                    <p>R$ 1.25/min</p>
+                    <p style="color: green;"> • Disponivel Agora</p>
+                </div>
+                
+                <div class="divPsicologas">
+                    <div>
+                        <img style="margin-top: 20px;" class="fotoPerfil" src="fotoperfil3.png" alt="">
+                    </div>
+                    <p style="font-weight: bold;">Sofia Fernandes</p>
+                    <p>R$ 0.59/min</p>
+                    <p style="color: rgb(153, 15, 151);">Agendar</p>
+                </div>
+            </div>
+        </div>
+        <div class="ocultar" id="telaChamada">
+            <img id="video" src="Tristeza ou depressão • Psicologia • Casule Saúde e Bem-estar(1).gif" alt="">
+            <img id="btnChamadas" src="botoeschamada.png" >
+        </div>
+        <div class="ocultar" id="menuAcolhedorIA">
+            <h1 id="h1Sentimento">Como está se sentindo agora?</h1>
+            <div class="ocultar" id="divButtons">
+                <button id="btnFeliz" onclick="btnIA(id)">Feliz</button>
+                <button id="btnAnsioso" onclick="btnIA(id)">Ansioso</button>
+                <button id="btnEstressado" onclick="btnIA(id)">Estressado</button>
+                <button id="btnTriste" onclick="btnIA(id)">Triste</button>
+                <button id="btnNeutro" onclick="btnIA(id)">Neutro</button>
+                <button id="btnLuto" onclick="btnIA(id)">Luto</button>
+            </div>
+            <div class="" id="chatbox">
+                <div id="message1">
+                    <p style="font-weight: bold;">AcolhedorIA diz:</p>
+                    <p id="textMessage"></p>
+                </div>
+            </div>
+            <div style="margin-left: 15%;  width: 100%;">
+                <input type="search" placeholder="Fale mais detalhadamente como se sente...">
+                <button id="btnDizer">Dizer para a IA</button>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</body>
+
+<script>
+function abrirMenu(id){
+    document.getElementById('fundo').src='giphy.gif'
+    document.getElementById('chatbox').style.visibility = 'hidden'
+    document.getElementById('menuConsultaOnline').classList.add('ocultar')
+    document.getElementById('assuntoLoading').style.color = '#0c4d97'
+    document.getElementById('menuBuscarClinicas').classList.add('ocultar')
+    document.getElementById('menuAcolhedorIA').classList.add('ocultar')
+    document.getElementById('menu').classList.remove('ocultar')
+    document.getElementById('telaChamada').classList.add('ocultar')
+            document.getElementById('menuAtendimentoDomiciliar').classList.add('ocultar')
+    
+    if(id=='btnBuscarClinicas'){
+        
+        document.getElementById('loading').classList.remove('ocultar')
+        document.getElementById('assuntoLoading').innerText = 'Abrindo o PsiuMaps'
+        setTimeout(() => {
+            
+            document.getElementById('assuntoLoading').innerText = 'Você está no Brasil'
+            document.getElementById('assuntoLoading').style.color = 'green'
+        }, 2000);
+        setTimeout(function() {
+            document.getElementById('loading').classList.add('ocultar')
+            document.getElementById('assuntoLoading').innerText = ''
+            document.getElementById('menuBuscarClinicas').classList.remove('ocultar')
+            document.getElementById('menu').classList.remove('ocultar')
+            document.getElementById('maps').src='mapsBrasil.png';
+            document.getElementById('fundo').src='mapsBrasil.png'
+        }, 2500);
+    } 
+    if(id=='locAtual'){
+        document.getElementById('loading').classList.remove('ocultar')
+        document.getElementById('assuntoLoading').innerText = 'Identificando sua Localização Atual'
+        setTimeout(function()  {
+            
+        document.getElementById('assuntoLoading').innerText = 'Você está em Metrópole Digital - IMD/UFRN'
+        }, 3000);
+        setTimeout(function() {
+            document.getElementById('loading').classList.add('ocultar')
+            document.getElementById('assuntoLoading').innerText = ''
+            document.getElementById('menuBuscarClinicas').classList.remove('ocultar')
+            document.getElementById('maps').src='maps.png';
+            document.getElementById('fundo').src='maps.png'
+            document.getElementById('menu').classList.remove('ocultar')
+        }, 5000);
+    }
+    if(id=='btnAtendimentoDomiciliar'){
+        {
+        document.getElementById('loading').classList.remove('ocultar')
+        document.getElementById('assuntoLoading').innerText = 'Identificando sua Localização Atual'
+        setTimeout(function()  {
+            
+        document.getElementById('assuntoLoading').innerText = 'Você está em Metrópole Digital - IMD/UFRN'
+        }, 2000);
+        setTimeout(function() {
+            document.getElementById('loading').classList.add('ocultar')
+            document.getElementById('assuntoLoading').innerText = ''
+        }, 4000);
+        setTimeout(function() {
+            document.getElementById('menuAtendimentoDomiciliar').classList.remove('ocultar')
+            document.getElementById('menu').classList.remove('ocultar')
+        }, 4300);
+
+    }
+    }
+    if(id=='btnConsultaOnline'){
+        document.getElementById('loading').classList.remove('ocultar')
+        document.getElementById('assuntoLoading').innerText = 'Identificando os melhores Psicológos da sua Região'
+        setTimeout(function()  {
+            
+        document.getElementById('assuntoLoading').innerText = 'Ei! Psiu! Achamos.'
+        }, 2500);
+        setTimeout(function() {
+            document.getElementById('loading').classList.add('ocultar')
+            document.getElementById('assuntoLoading').innerText = ''
+        }, 4000);
+        setTimeout(function() {
+
+            document.getElementById('menuConsultaOnline').classList.remove('ocultar')
+            document.getElementById('menu').classList.remove('ocultar')
+        }, 4300);
+
+    }
+    if(id=='btnIA'){
+        document.getElementById('loading').classList.remove('ocultar')
+        document.getElementById('assuntoLoading').innerText = 'Abrindo o AcolhedorIA'
+        setTimeout(function() {
+            document.getElementById('loading').classList.add('ocultar')
+            
+        document.getElementById('assuntoLoading').innerText = ''
+            document.getElementById('menuAcolhedorIA').classList.remove('ocultar')
+            document.getElementById('menu').classList.remove('ocultar')
+            document.getElementById('divButtons').classList.remove('ocultar')
+        }, 2000);
+    }
+    if(id=='btnBuscar'){
+        var text = document.getElementById('inputLoc').value;
+        document.getElementById('inputLoc').value = ''
+        document.getElementById('loading').classList.remove('ocultar')
+        document.getElementById('assuntoLoading').innerText = 'Pesquisando por: ' + text;
+        setTimeout(function()  {
+            
+        document.getElementById('assuntoLoading').innerText = 'Ei! Psiu! Achamos Mossoró - RN.'
+        }, 3000);
+        setTimeout(function() {
+            document.getElementById('loading').classList.add('ocultar')
+            document.getElementById('assuntoLoading').innerText = ''
+            document.getElementById('menuBuscarClinicas').classList.remove('ocultar')
+            document.getElementById('maps').src='mossoró.png';
+            document.getElementById('fundo').src='mossoró.png'
+            document.getElementById('menu').classList.remove('ocultar')
+        }, 5000);
+    }
+    if(id=='divTeresa'){
+        document.getElementById('loading').classList.remove('ocultar')
+        document.getElementById('assuntoLoading').innerText = 'Abrindo chamada de vídeo com Teresa'
+        setTimeout(function()  {
+            
+        document.getElementById('assuntoLoading').innerText = 'Pronto. Vamos começar!'
+        }, 2500);
+        setTimeout(function() {
+            document.getElementById('loading').classList.add('ocultar')
+            document.getElementById('assuntoLoading').innerText = ''
+        }, 4000);
+        setTimeout(function() {
+
+            document.getElementById('telaChamada').classList.remove('ocultar')
+            document.getElementById('menu').classList.remove('ocultar')
+        }, 4300);
+    }
+}
+
+function btnIA(id){
+    document.getElementById('divButtons').classList.add('ocultar')
+    document.getElementById('chatbox').style.visibility = 'visible'
+    document.getElementById('textMessage').innerText = '.'
+    setTimeout(() => {
+    document.getElementById('textMessage').innerText = '..'
+    }, 400);
+    setTimeout(() => {
+    document.getElementById('textMessage').innerText = '...'
+    }, 800);
+    setTimeout(() => {
+    document.getElementById('textMessage').innerText = '.'
+    }, 1200);
+    setTimeout(() => {
+    document.getElementById('textMessage').innerText = '..'
+    }, 1600);
+    setTimeout(() => {
+    document.getElementById('textMessage').innerText = '...'
+    }, 1900);
+    setTimeout(function() {
+        if(id=='btnLuto'){
+        document.body.style.backgroundColor = 'black';
+        document.getElementById('btnDizer').style.backgroundColor = 'black'
+        document.getElementById('btnDizer').style.color = 'white'
+        document.getElementById('h1Sentimento').style.color = 'black'
+        document.getElementById('modoHumor').style.color = 'black'
+        document.getElementById('nomePagina').style.color = 'black';
+        document.getElementById('textMessage').innerText = 'Sinto muito pela sua perda. O luto é um processo delicado, e estou aqui para apoiar você. Podemos explorar maneiras de honrar a memória daqueles que se foram e, ao mesmo tempo, cuidar de sua saúde mental. Conversar sobre seus sentimentos pode ser um primeiro passo importante.'
+    }
+    if(id=='btnFeliz'){
+        document.body.style.backgroundColor = '#90900088';
+        document.getElementById('btnDizer').style.backgroundColor = '#90900088'
+        document.getElementById('btnDizer').style.color = 'white'
+        document.getElementById('h1Sentimento').style.color = '#90900088'
+        document.getElementById('modoHumor').style.color = '#90900088'
+        document.getElementById('nomePagina').style.color = '#90900088'
+        document.getElementById('textMessage').innerText = 'Que notícia maravilhosa! A felicidade é preciosa, e quero ajudar a perpetuá-la. Vamos explorar maneiras de cultivar e manter essa alegria em sua vida. Talvez compartilhando experiências, estabelecendo metas ou simplesmente celebrando as conquistas.'
+    }
+    if(id=='btnAnsioso'){
+        document.body.style.backgroundColor = '#9e731b88';
+        document.getElementById('btnDizer').style.backgroundColor = '#9e731b88'
+        document.getElementById('btnDizer').style.color = 'white'
+        document.getElementById('h1Sentimento').style.color = '#9e731b88'
+        document.getElementById('modoHumor').style.color = '#9e731b88'
+        document.getElementById('nomePagina').style.color = '#9e731b88'
+        document.getElementById('textMessage').innerText = 'Compreendo que a ansiedade pode ser avassaladora. Vamos abordar isso juntos. Tente identificar as causas específicas da ansiedade e, gradualmente, enfrentá-las. Podemos explorar técnicas de respiração, práticas de mindfulness e estabelecer metas para ajudar a aliviar essa sensação.'
+    }
+    if(id=='btnEstressado'){
+        document.body.style.backgroundColor = '#6f000088';
+        document.getElementById('btnDizer').style.backgroundColor = '#6f000088'
+        document.getElementById('btnDizer').style.color = 'white'
+        document.getElementById('h1Sentimento').style.color = '#6f000088'
+        document.getElementById('modoHumor').style.color = '#6f000088'
+        document.getElementById('nomePagina').style.color = '#6f000088'
+        document.getElementById('textMessage').innerText = 'O estresse pode ser desafiador, mas juntos podemos desenvolver estratégias para enfrentá-lo. Identificar fontes de estresse, estabelecer limites e priorizar o autocuidado são passos importantes. Estou aqui para ajudar a aliviar a pressão e encontrar maneiras de tornar sua vida mais equilibrada.'
+    }
+    if(id=='btnNeutro'){
+        document.body.style.backgroundColor = '#48424288';
+        document.getElementById('btnDizer').style.backgroundColor = '#48424288'
+        document.getElementById('btnDizer').style.color = 'white'
+        document.getElementById('h1Sentimento').style.color = '#48424288'
+        document.getElementById('modoHumor').style.color = '#48424288'
+        document.getElementById('nomePagina').style.color = '#48424288'
+        document.getElementById('textMessage').innerText = 'Se você está se sentindo neutro/a, isso é completamente compreensível. Às vezes, precisamos de momentos de tranquilidade. Vamos explorar maneiras de trazer mais significado e propósito à sua vida. Podemos criar metas alcançáveis e encontrar atividades que tragam satisfação.'
+    }
+    if(id=='btnTriste'){
+        document.body.style.backgroundColor = '#96b5dd';
+        document.getElementById('btnDizer').style.backgroundColor = '#96b5dd'
+        document.getElementById('btnDizer').style.color = 'white'
+        document.getElementById('h1Sentimento').style.color = '#96b5dd'
+        document.getElementById('modoHumor').style.color = '#96b5dd'
+        document.getElementById('nomePagina').style.color = '#96b5dd'
+        document.getElementById('textMessage').innerText = 'Estou aqui para oferecer apoio enquanto você atravessa este momento difícil. Às vezes, compartilhar as emoções pode aliviar o peso da tristeza. Vamos conversar sobre o que está causando essa tristeza e trabalhar em estratégias para encontrar conforto e resiliência'
+    }
+    }, 2000);
+}
+</script>
+</html>

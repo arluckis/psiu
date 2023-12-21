@@ -1,0 +1,443 @@
+
+
+body{
+    background-color: white;
+    margin: 0 0 0 0 ;
+}
+
+*{font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#icone1 {
+    width: 50px;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%,-50%);
+    filter:invert(0.3);
+    transition: width 0.1s ease-in-out;
+}
+
+#fotoPerfil{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+#divPerfil{
+    position: absolute;
+    top: 2px;
+    width: 500px;
+    height: 40px;
+    right: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    width: 150px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out, height 0.2s ease-in-out, width 0.3s ease-in-out;
+}
+
+#listaBtnsPerfil{
+    text-align: center; 
+    font-weight: bold; 
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+#divPerfil:hover{
+    height: 180px;
+    background-color: #9bc8c7;
+    width: 200px;
+    #listaBtnsPerfil{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+#nomePerfil{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#modoHumor{
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.782);
+    color: #4ec5c3;
+    height: 40px;
+    border-radius: 20px;
+    top: 5px;
+}
+
+#modoHumor p{
+    text-align: center;
+    top: -5px;
+    position: relative;
+    font-weight: bold;
+}
+
+.divIcone {
+    width: 100px;
+    height: 100px;
+    background-color: #e6ebe0a4;
+    border-radius: 20px;
+    margin-left: 50%;
+    transform: translate(-50%, 20%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.144);
+}
+
+.contornoDivIcone{
+    width: 150px;
+    height: 170px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    position: relative;
+}
+
+.contornoDivIcone:hover{
+    background-color: #6bdbd98d;
+    cursor: pointer;
+    #icone1{
+        width: 60px;
+    }
+}
+
+.containerDivs{
+    margin-left: 50%;
+    bottom: 10px;
+    display: flex;
+    position:absolute;
+    transform: translate(-50%);
+}
+
+.btnEditar{
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    font-size: 22px;
+    right: 10px;
+    top: -20px;
+    transition: color 0.2s;
+}
+#topPagina h1{
+    margin-top: 5px;
+    left: 100px;
+    color: #56f1ee;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+
+}
+#topPagina{
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2a8;
+    top: 0px;
+    position: absolute;
+    display: flex;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.164);
+}
+.nomeBtn{
+    position: relative;
+    bottom: -25px;
+    margin-left: 50%;
+    transform: translate(-54%);
+    color: rgba(55, 53, 53, 0.689);
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#menu{
+    background-color: #ffffff;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    margin: auto auto auto auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.149);
+    margin-top: 70px;
+}
+
+#fundo{
+    width: 100%;
+    top: 50px;
+    position: fixed;
+    opacity: 0.25;
+    filter: blur(10px);
+}
+
+#tela1atendimento{
+    text-align: center;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+#tela1atendimento p{
+    color: #029390;
+}
+
+#tela1atendimento h2{
+    color: #9b12a8;
+    background-color: #dd8de566;
+    padding: 10px;
+    border-radius: 20px;
+}
+#btnContinuar:hover{
+    background-color: #029330b1;
+    color: white;
+}
+#btnDigLoc:hover{
+    background-color: #fb1500b4;
+    color: white;
+}
+#tela1atendimento button{
+    border: none;
+    padding: 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#menuBuscarClinicas{
+    position: absolute;
+    width: 600px;
+}
+#btnChamadas{
+    width: 200px;
+    margin-top: -80px;
+    margin-left: 200px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#video{
+    width: 230%;
+    position:relative;
+    border-radius:10px;
+}
+#telaChamada{
+    position: absolute;
+}
+#maps{
+    margin-top: 10px;
+    width: 450px;
+    border-radius: 20px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+#menuBuscarClinicas input{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    height: 25px;
+}
+#locAtual{
+    border: 0px;
+    background-color: rgba(21, 157, 103, 0.705);
+    color: white;
+    height: 30px;
+    width: 250px;
+    margin-left: -10px;
+    border-radius: 20px;
+    margin-top: 7px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#menuAcolhedorIA{
+    position: relative;
+}
+
+#assuntoLoading{
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    font: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0c4d97;
+}
+
+.divPsicologas{
+    background-color: rgba(255, 255, 255, 0.375);
+    text-align: center;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 35px;
+    margin-top: 50px;
+    width: 150px;
+    height: 230px;
+    transition: background-color 0.1s ease-in-out;
+}
+.divPsicologas:hover{
+    background-color: rgba(246, 246, 255, 0.689);
+    .fotoPerfil{
+        width: 105px;
+        margin-bottom: 0px;
+    }
+}
+#message1{
+    width: 500px;
+    margin-left: 40px;
+    margin-top: -140px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.522);
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+#chatbox{
+    position:absolute;
+    visibility: hidden;
+}
+#divListaPsicologas{
+    display: flex;
+    margin-top: -50px;
+}
+
+.fotoPerfil{
+    width: 100px;
+    border-radius: 300px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    transition: width 0.1s ease-in-out;
+}
+#menuConsultaOnline{
+    position: absolute;
+}
+
+#menuConsultaOnline h2{
+    color: rgb(126, 126, 177);
+    text-align: center;
+}
+
+#menuConsultaOnline input{
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    height: 30px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+#menuAcolhedorIA h1{
+    background-color: #ffffff4f;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0cc3c0;
+}
+
+#menuAcolhedorIA input{
+    background-color: #ffffff3b;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+}
+#menuAcolhedorIA button{
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 40px;
+}
+
+#loading{
+    width: 300px;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+#divButtons button{
+    width: 200px;
+    height: 60px;
+    margin: 0px 0px 20px 60px;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+}
+
+#btnFeliz{
+    background-color: rgb(255, 225, 0);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+#menuAtendimentoDomiciliar{
+    position: absolute;
+}
+
+#btnAnsioso{
+    background-color: rgb(255, 153, 0);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#btnEstressado{
+    background-color: rgb(255, 25, 0);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#btnTriste{
+    background-color: rgb(69, 170, 191);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#btnNeutro{
+    background-color: rgb(128, 127, 121);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#btnLuto{
+    background-color: rgb(17, 17, 12);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.ocultar{
+    visibility: hidden;
+}
+#btnBuscar{
+    border: 0px;
+    background-color: rgba(196, 12, 228, 0.675);
+    color: white;
+    height: 30px;
+    width: 180px;
+    margin-left: 10px;
+    border-radius: 20px;
+    margin-top: 7px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#btnFechar{
+    border: 0px;
+    background-color: rgba(255, 0, 0, 0.644);
+    color: white;
+    height: 30px;
+    width: 180px;
+    margin-left: 10px;
+    border-radius: 20px;
+    margin-top: 7px;
+    margin-right: 20px;
+    cursor: pointer;
+}
